@@ -85,7 +85,7 @@ $$) as (a agtype);
 Next we can return the path we just created (results have been formatted for readability):
 
 ```sql
-SELECT * from cypher('age', $$
+SELECT * from cypher('my_graph_name', $$
   MATCH p=(a)-[]-(b)
   RETURN p
 $$) as (a agtype);
